@@ -45,4 +45,12 @@ git branch
 
 Switch to another branch 
 
-git checkout <branch name>
+git checkout <branch name> / git switch <branch name>
+
+6. Commit changes 
+
+git commit -m "commit name here"
+
+7. Push commits to the github
+
+git push -u origin <branch name>
