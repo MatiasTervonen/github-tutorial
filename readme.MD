@@ -120,6 +120,14 @@ git push -u origin feature/login
   Add title and description explaining your changes. When you are ready click "create pull request".
   Your team will review the changes, and if there is no issues, the pull request will be merged to the main branch.
 
+6. Delete branch After your pull request have been reviewed and merged into the main branch, you can safely delete branch from GitHub and your local machine.  
+   On GitHub, open the pull request page and click "delete branch" button.
+
+On your local machine delete with:
+```bash
+git branch -D feature/login
+```
+
 **Version control**
 
 1. See all past changes, shows all past commits wih unique commit ID.
