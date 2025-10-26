@@ -161,3 +161,5 @@ git revert <commit-id>
 ```bash
 git reset --hard <commit-id>
 ```
+
+
