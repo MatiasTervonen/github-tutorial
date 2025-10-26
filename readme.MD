@@ -1,16 +1,48 @@
-# GitHub Tutorial 
+# GitHub Tutorial
 
-- Install git to your computer. You can install GithubDesktop its a graphigal interface to made it easier to handle Git. Git also comes with it.
+1. Install Git
 
-1. Configure your profile in git first.  
+Install Git on your computer.
+You can also install GitHub Desktop, which provides a graphical interface to make it easier to manage Git repositories.
+GitHub Desktop includes Git automatically.
 
-git config --global user.name "your name here"
+2. Configure Your Profile
 
-git config --global user.email "your email here"
+Before you start using Git, configure your username and email:
 
-2. git init / makes a new hided folder in you project. It it needed to track all changes in your project.
+git config --global user.name "Your Name Here"
+git config --global user.email "your@email.com"
 
-2. git add .  adds all folders  / git <folder name>  adds specifig folder what you are curently tracking
+3. Initialize Repository
 
-3. git status / You can check on wich branch you are curently and what files you have changes.  
+To start tracking a project with Git.
 
+git init
+
+4. Add Files to the Repository
+
+add all files
+
+git add .  
+
+add a specific file 
+
+git add <folder name>
+
+
+4. To see which branch you’re currently on and what changes have been made:
+
+git status
+
+
+5. Create a new branch 
+
+git branch <branch name here>
+
+See all branches and which one you’re currently on 
+
+git branch
+
+Switch to another branch 
+
+git checkout <branch name>
