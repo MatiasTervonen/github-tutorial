@@ -28,6 +28,12 @@ To start tracking a project with Git.
 git init
 ```
 
+3.5 Create .gitignore file ⚠️
+
+Before adding files to your repository create .gitignore file.  
+This File tells Git wich files or folders to ignore. These files will not be tracked or pushed to the github.  
+All sensitive information like passwords,api_keys... or things you need only during developement example: node_modules.
+
 4. Add Files to the Repository
 
 Add all files
@@ -124,6 +130,7 @@ git push -u origin feature/login
    On GitHub, open the pull request page and click "delete branch" button.
 
 On your local machine delete with:
+
 ```bash
 git branch -D feature/login
 ```
@@ -155,11 +162,27 @@ git checkout <commit-id>
 git revert <commit-id>
 ```
 
-4. Hard reset. Go to back permanently. (Dangerous)
+4. Hard reset. Go to back permanently. (Dangerous) ⚠️
    Moves project back to specific commit and deletes all commits that came after it.
 
 ```bash
 git reset --hard <commit-id>
 ```
 
+Git tags
 
+Git tags are labels you attach to specific commits to mark important versions of your project. Example production releases or milestones.
+Commit your final release change, then create tag for that version.
+
+example:
+
+```bash
+git tag -a v1.0.0 -m "First public release on Play Store"
+git push origin v1.0.0
+```
+
+To see all existing tags:
+
+```bash
+git tag
+```
